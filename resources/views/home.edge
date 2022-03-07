@@ -1,0 +1,24 @@
+<h1> Register </h1>
+<form 
+action="{{route('user.create')}}"
+        method="POST">
+    <label for="fname">FirstName: </label><br>
+    <input type="text" name="fname">
+    <br>
+    <label for="lname">LastName: </label><br>
+    <input type="text" name="lname">
+    <br>
+    <label for="email">Email: </label><br>
+    <input type="email" name="email">
+    <br><br>
+
+    @!component('button',{
+        text: 'Submit',
+        type: 'submit'
+    })
+    
+</form>
+
+
+
+
